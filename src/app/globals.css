@@ -16,83 +16,83 @@
 
 
 
-/* .Text Preset 1 - Bellefair Regular 144px - 171.9% Line Height (Normal) - 0px Letter Spacing */
+/* .Text Preset 1 - Bellefair Regular144px - 171.9% Line Height (Normal) - 0px Letter Spacing tablet:  mob80*/
 
 .Text-Preset-1{
   font-family: "Bellefair", serif;
   font-size:144px;
-  line-height: 171.9%;
-  letter-spacing: 0px;
+  /* line-height: 171.9%; */
+  /* letter-spacing: 0px; */
 }
 
-/* Text Preset 2  - Bellefair Regular 100px - 114.6% Line Height (Normal) - 0px Letter Spacing */
+/* Text Preset 2  - Bellefair Regular100px - 114.6% Line Height (Normal) - 0px Letter Spacing  80  56*/
 .Text-Preset-2{
   font-family: "Bellefair", serif;
   font-size: 100px;
-  line-height: 114.6%;
-  letter-spacing: 0px;
+  /* line-height: 114.6%; */
+  /* letter-spacing: 0px; */
 }
 
-/* Text Preset 3 - Bellefair Regular 56px - 64.2% Line Height (Normal) - 0px Letter Spacing? */
+/* Text Preset 3 - Bellefair Regular56px - 64.2% Line Height (Normal) - 0px Letter Spacing? 40 24*/
 
 .Text-Preset-3{
   font-family: "Bellefair", serif;
   font-size: 100px;
-  line-height: 64.2%;
-  letter-spacing: 0px;
+  /* line-height: 64.2%; */
+  /* letter-spacing: 0px; */
 }
 
-/* Text Preset 4 - Bellefair Regular 32px - 36.7% Line Height (Normal) - 0px Letter Spacing */
+/* Text Preset 4 - Bellefair Regular32px - 36.7% Line Height (Normal) - 0px Letter Spacing  24 18 */
 
 .Text-Preset-4{
   font-family: "Bellefair", serif;
   font-size: 32px;
-  line-height: 36.7%;
-  letter-spacing: 0px;
+  /* line-height: 36.7%; */
+  /* letter-spacing: 0px; */
 }
 
-/* Text Preset 5 - Barlow Condensed Regular 28px - 33.6% Line Height (Normal) - 4px Letter Spacing */
+/* Text Preset 5 - Barlow Condensed Regular28px - 33.6% Line Height (Normal) - 4px Letter Spacing 20 */
 
 .Text-Preset-5{
   font-family: "Barlow Condensed", sans-serif;
-  font-size: 28px;
-  line-height: 33.6%;
-  letter-spacing: 4px;
+  /* font-size: 28px; */
+  /* line-height: 33.6%; */
+  /* letter-spacing: 4px; */
 }
 
-/* Text Preset 6 - Bellefair Regular 28px - 32.1% Line Height (Normal) - 0px Letter Spacing */
+/* Text Preset 6 - Bellefair Regular28px - 32.1% Line Height (Normal) - 0px Letter Spacing 16 16*/
 .Text-Preset-6{
   font-family: "Bellefair", serif;
   font-size: 28px;
-  line-height: 32.1%;
-  letter-spacing:0;
+  /* line-height: 32.1%; */
+  /* letter-spacing:0; */
 }
 
-/* Text Preset 7 - Barlow Condensed Regular 14px - 16.8% Line Height (Normal) - 2px Letter Spacing */
+/* Text Preset 7 - Barlow Condensed Regular14px - 16.8% Line Height (Normal) - 2px Letter Spacing */
 
 .Text-Preset-7{
   font-family: "Barlow Condensed", sans-serif;
   font-size: 14px;
-  line-height: 16.8%;
-  letter-spacing:2px;
+  /* line-height: 16.8%; */
+  /* letter-spacing:2px; */
 }
 
-/* Text Preset 8 - Barlow Condensed Regular 16px - 19.2% Line Height (Normal) - 2px Letter Spacing */
+/* Text Preset 8 - Barlow Condensed Regular16px - 19.2% Line Height (Normal) - 2px Letter Spacing mob 14*/
 
 .Text-Preset-8{
   font-family: "Barlow Condensed", sans-serif;
   font-size: 14px;
-  line-height: 16.8%;
-  letter-spacing:2px;
+  /* line-height: 16.8%; */
+  /* letter-spacing:2px; */
 }
 
-/* Text Preset 9 - Barlow Regular 18px - 180% Line Height - 0px Letter Spacing */
+/* Text Preset 9 - Barlow Regular18px - 180% Line Height - 0px Letter Spacing mob 15*/
 
 .Text-Preset-9{
   font-family: "Barlow", sans-serif;
   font-size: 18px;
-  line-height: 180%;
-  letter-spacing:0;
+  /* line-height: 180%; */
+  /* letter-spacing:0; */
 }
 
 .whiteTextColor{
