@@ -2,24 +2,22 @@
 import React, { useEffect, useState } from "react";
 
 const BgContainer = ({ desktopImg, tabletImg, children }) => {
-  const [bgImage, setBgImage] = useState(tabletImg); // 👈 default tablet image
+  const [bgImage, setbgImage] = useState(tabletImg);
 
   useEffect(() => {
-    // Yeh code sirf client pe chalega
-    const handleResize = () => {
+
+    const sizeHandler = () =>{
       if (window.innerWidth >= 1024) {
-        setBgImage(desktopImg);
-      } else {
-        setBgImage(tabletImg);
+        setbgImage(desktopImg)
+        
+      }else{
+        setbgImage(tabletImg)
       }
-    };
-
-    handleResize(); // initial check on load
-    window.addEventListener("resize", handleResize);
-
-    // cleanup on unmount
-    return () => window.removeEventListener("resize", handleResize);
-  }, [desktopImg, tabletImg]);
+    }
+    sizeHandler();
+  }, [desktopImg,tabletImg])
+  
+ 
 
   return (
     <div

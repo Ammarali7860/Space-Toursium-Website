@@ -3,8 +3,8 @@ import Navbar from '../components/Navbar.jsx';
 import BgContainer from '../components/BgContainer.jsx';
 
 const page = () => {
-  const desktopImg = "/images/bg1.png"
-  const tabletImg = "/images/Tablet.png"
+  const desktopImg = "/images/technology.png"
+  const tabletImg = "/images/technology.png"
   return (
     <div>
       <BgContainer
