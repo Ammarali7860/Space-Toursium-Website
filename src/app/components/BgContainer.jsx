@@ -21,7 +21,7 @@ const BgContainer = ({ desktopImg, tabletImg, children }) => {
 
   return (
     <div
-      className="h-screen w-screen bg-cover bg-no-repeat bg-center flex flex-col transition-all duration-300"
+      className="h-auto w-screen bg-cover bg-no-repeat bg-center flex flex-col transition-all duration-300"
       style={{
         backgroundImage: `url(${bgImage})`,
       }}
