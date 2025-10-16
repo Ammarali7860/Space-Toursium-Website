@@ -26,7 +26,7 @@ const CrewSection = () => {
             {activecrew.description}
           </p>
         </div>
-        <ol className="flex  Text-Preset-8 text-[12px] lg:text-[14px] space-x-5 lg:space-x-10 justify-end items-center">
+        <ol className="cursor-pointer flex  Text-Preset-8 text-[12px] lg:text-[14px] space-x-5 lg:space-x-10 justify-end items-center">
           {crew.map((crew, index) => (
             <li key={crew.Name}>
               <div
@@ -47,7 +47,7 @@ const CrewSection = () => {
           height={500}
           className=" w-[150px] h-[180px] md:w-[250px] md:h-[250px] lg:w-[500px] lg:h-[500px] self-center lg:self-start object-contain"
         />
-        {/* sm:w-48 sm:h-48 md:w-72 md:h-72 */}
+        
       </div>
     </section>
   );

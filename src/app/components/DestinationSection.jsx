@@ -26,7 +26,7 @@ const DestinationSection = () => {
                         <li key={planet.name}>
                             <button
                             onClick={()=>setcurrentIndex(index)}
-                            className={`pb-[13px] hover:border-b-2 hover:border-white ${currentIndex === index ? "border-b-2 border-white" : ""}`}>{planet.name}</button>
+                            className={`pb-[13px] hover:border-b-2 hover:border-white uppercase ${currentIndex === index ? "border-b-2 border-white" : ""}`}>{planet.name}</button>
                             {/* <Link href="/"
                                 className={`pb-[13px] hover:border-b-2 hover:border-white ${pathName === "/" ? "border-b-2 border-white" : ""}`}
                             >
@@ -36,7 +36,7 @@ const DestinationSection = () => {
                     ))}
 
                 </ol>
-                <h1 className=' text-[56px] md:text-[80px] lg:text-[100px] leading-[1] lg:leading-normal Text-Preset-2'>{activedestination.name}</h1>
+                <h1 className=' text-[56px] md:text-[80px] lg:text-[100px] leading-[1] lg:leading-normal Text-Preset-2 uppercase'>{activedestination.name}</h1>
                 <p className='Text-Preset-9 text-[15px] font-thin lightBlueCustomTextColor text-center lg:text-start'>{activedestination.description}</p>
                 <hr className='w-full h-[1px] lightBlueCustombgColor my-0 lg:my-10' />
                 <div className='w-full flex gap-6 uppercase flex-col lg:flex-row items-center lg:items-start'>
