@@ -6,7 +6,7 @@ import BgContainer from './components/BgContainer.jsx'
 
 BgContainer
 
-const page = () => {
+const Page = () => {
   // const desktopImg = "/images/bg1.png"
   // const tabletImg = "/images/Tablet.png"
 
@@ -44,4 +44,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
