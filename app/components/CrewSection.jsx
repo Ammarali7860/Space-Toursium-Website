@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import { crew } from "../components/crewData.js";
+import { crew } from "./crewData.js";
 
 const CrewSection = () => {
   const [currentIndex, setcurrentIndex] = useState(0);

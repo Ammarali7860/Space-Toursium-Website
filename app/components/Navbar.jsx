@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <div className="header  p-6 md:p-0 lg:pt-10 flex items-center relative justify-between">
       <div className="logo w-[50%] md:w-[20%] lg:w-[20%]  flex lg:justify-center md:justify-center sm:justify-start">
-        <Link href="/"><Image src="/images/Logo (1).png" alt="logo" width={48} height={48} /></Link>
+        <Link href="/"><Image src="/images/logo (1).png" alt="logo" width={48} height={48} /></Link>
       </div>
       <div className="w-[35rem] lg:block  hidden border-b border-[#979797] z-50 absolute left-50"></div>
       <div>
