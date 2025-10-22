@@ -7,7 +7,7 @@
   "build": "next build",
   "start": "next start",
   "lint": "eslint"
-},
+},  
   "dependencies": {
     "@netlify/plugin-nextjs": "^5.14.3",
     "@tailwindcss/vite": "^4.1.13",

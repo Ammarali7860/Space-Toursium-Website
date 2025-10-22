@@ -12,7 +12,7 @@ const Page = () => {
 
   return (
     <>
-      {/* /* <div className='h-screen w-screen lg:bg-[url(/images/bg1.png)] bg-[url(/images/Tablet.png)] bg-cover bg-no-repeat bg-center flex flex-col'> */} */}
+      {/* /* <div className='h-screen w-screen lg:bg-[url(/images/bg1.png)] bg-[url(/images/Tablet.png)] bg-cover bg-no-repeat bg-center flex flex-col'> */} */
       <BgContainer 
       desktopImg="/images/bg1.png"
       tabletImg = "/images/tablet.png"
