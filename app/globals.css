@@ -1,26 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
 @import "tailwindcss";
-
-
 
 :root {
   --whiteCustom: #ffffff;
-  --lightBlueCustom: #D0D6F9;
-   --darkBlueCustom: #0B0D17;
+  --lightBlueCustom: #d0d6f9;
+  --darkBlueCustom: #0b0d17;
   /* Define other colors */
 }
 
-
-
-
-
-
-
-
 /* .Text Preset 1 - Bellefair Regular144px - 171.9% Line Height (Normal) - 0px Letter Spacing tablet:  mob80*/
 
-.Text-Preset-1{
+.Text-Preset-1 {
   font-family: "Barlow Condensed", serif;
   font-style: normal;
   /* font-size:144px; */
@@ -29,7 +20,7 @@
 }
 
 /* Text Preset 2  - Bellefair Regular100px - 114.6% Line Height (Normal) - 0px Letter Spacing  80  56*/
-.Text-Preset-2{
+.Text-Preset-2 {
   font-family: "Bellefair", serif;
   font-style: normal;
   /* font-size: 100px; */
@@ -39,7 +30,7 @@
 
 /* Text Preset 3 - Bellefair Regular56px - 64.2% Line Height (Normal) - 0px Letter Spacing? 40 24*/
 
-.Text-Preset-3{
+.Text-Preset-3 {
   font-family: "Bellefair", serif;
   font-style: normal;
   /* font-size: 100px; */
@@ -49,7 +40,7 @@
 
 /* Text Preset 4 - Bellefair Regular32px - 36.7% Line Height (Normal) - 0px Letter Spacing  24 18 */
 
-.Text-Preset-4{
+.Text-Preset-4 {
   font-family: "Bellefair", serif;
   font-style: normal;
   /* font-size: 32px; */
@@ -59,7 +50,7 @@
 
 /* Text Preset 5 - Barlow Condensed Regular28px - 33.6% Line Height (Normal) - 4px Letter Spacing 20 */
 
-.Text-Preset-5{
+.Text-Preset-5 {
   font-family: "Barlow Condensed", sans-serif;
   font-style: normal;
   /* font-size: 28px; */
@@ -68,7 +59,7 @@
 }
 
 /* Text Preset 6 - Bellefair Regular28px - 32.1% Line Height (Normal) - 0px Letter Spacing 16 16*/
-.Text-Preset-6{
+.Text-Preset-6 {
   font-family: "Bellefair", serif;
   font-style: normal;
   /* font-size: 28px; */
@@ -78,7 +69,7 @@
 
 /* Text Preset 7 - Barlow Condensed Regular14px - 16.8% Line Height (Normal) - 2px Letter Spacing */
 
-.Text-Preset-7{
+.Text-Preset-7 {
   font-family: "Barlow Condensed", sans-serif;
   font-style: normal;
   /* font-size: 14px; */
@@ -88,7 +79,7 @@
 
 /* Text Preset 8 - Barlow Condensed Regular16px - 19.2% Line Height (Normal) - 2px Letter Spacing mob 14*/
 
-.Text-Preset-8{
+.Text-Preset-8 {
   font-family: "Barlow Condensed", sans-serif;
   font-style: normal;
   /* font-size: 14px; */
@@ -98,7 +89,7 @@
 
 /* Text Preset 9 - Barlow Regular18px - 180% Line Height - 0px Letter Spacing mob 15*/
 
-.Text-Preset-9{
+.Text-Preset-9 {
   font-family: "Barlow", sans-serif;
   font-style: normal;
   /* font-size: 18px; */
@@ -106,22 +97,21 @@
   /* letter-spacing:0; */
 }
 
-.whiteTextColor{
-  color:var(--whiteCustom);
+.whiteTextColor {
+  color: var(--whiteCustom);
 }
-.whitebgColor{
-  background-color:var(--whiteCustom);
+.whitebgColor {
+  background-color: var(--whiteCustom);
 }
-.lightBlueCustomTextColor{
-  color:var(--lightBlueCustom);
+.lightBlueCustomTextColor {
+  color: var(--lightBlueCustom);
 }
-.lightBlueCustombgColor{
-  background-color:var(--lightBlueCustom);
+.lightBlueCustombgColor {
+  background-color: var(--lightBlueCustom);
 }
-.darkBlueCustomTextColor{
-  color:var(--darkBlueCustom);
+.darkBlueCustomTextColor {
+  color: var(--darkBlueCustom);
 }
-.darkBlueCustombgColor{
-  background-color:var(--darkBlueCustom);
+.darkBlueCustombgColor {
+  background-color: var(--darkBlueCustom);
 }
-

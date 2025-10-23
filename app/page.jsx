@@ -22,7 +22,7 @@ const Page = () => {
 
         {/* hero section */}
 
-        <section className='flex flex-col lg:flex-row mx-auto sm:w-full md:w-[75%] lg:w-[75%] lg:items-end md:items-center justify-center lg:justify-end h-auto lg:h-[82vh] p-6 md:p-0 lg:pb-16'>
+        <section className='flex flex-col lg:flex-row mx-auto sm:w-full md:w-[75%] lg:w-[75%] lg:items-end md:items-center justify-center lg:justify-end h-auto lg:h-[82vh] p-6 md:p-0 lg:pb-16 overflow-hidden'>
           <div className="hero-section-content md:w-full lg:w-1/2  items-center lg:items-start  whiteTextColor flex flex-col gap-6  ">
             <h3 className='Text-Preset-5 md:text-[20px] lg:text-[28px] lightBlueCustomTextColor'>SO, YOU WANT TO TRAVEL TO</h3>
             <h1 className=' text-[80px] md:text-[144px] lg:text-[144px] leading-[1] lg:leading-normal Text-Preset-1'>SPACE</h1>
