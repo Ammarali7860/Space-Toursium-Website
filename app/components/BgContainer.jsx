@@ -14,7 +14,9 @@ const BgContainer = ({ desktopImg, tabletImg, children }) => {
         setbgImage(tabletImg)
       }
     }
-    sizeHandler();
+    return () => {
+      window.removeEventListener("resize", sizeHandler);
+    };
   }, [desktopImg,tabletImg])
   
  
