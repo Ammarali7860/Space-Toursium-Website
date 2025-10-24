@@ -2,13 +2,25 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { crew } from "./crewData.js";
+import { AnimatePresence, motion } from "framer-motion";
+
 
 const CrewSection = () => {
   const [currentIndex, setcurrentIndex] = useState(0);
   const activecrew = crew[currentIndex];
   return (
-    <section className="flex flex-col lg:flex-row gap-0 lg:gap-8 mx-auto max-w-[1440px] h-full lg:h-[82vh] px-6 pb-6 lg:px-[165px] lg:py-[48px]">
-      <div className="w-full md:w-[75%] lg:w-1/2 m-auto lg:m-0 whiteTextColor flex flex-col lg:justify-between items-center lg:items-start gap-[64px] lg:gap-0 pb-[48px]">
+   <AnimatePresence mode='wait'>
+        <motion.section
+  initial={{ opacity: 0, y: 40 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, ease: "easeOut" }}  className="flex flex-col lg:flex-row gap-0 lg:gap-8 mx-auto max-w-[1440px] h-full lg:h-[82vh] px-6 pb-6 lg:px-[165px] lg:py-[48px]">
+      <motion.div
+      key={activecrew.Name}
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{opacity:0,y:50}}
+      transition={{duration:0.4}}      
+      className="w-full md:w-[75%] lg:w-1/2 m-auto lg:m-0 whiteTextColor flex flex-col lg:justify-between items-center lg:items-start gap-[64px] lg:gap-0 pb-[48px]">
         <div>
           <h3 className="Text-Preset-5 md:text-[20px] lg:text-[28px] whiteTextColor font-normal tracking-[4px]">
             <span className="opacity-[0.25]">02</span> MEET YOUR CREW
@@ -38,8 +50,16 @@ const CrewSection = () => {
             </li>
           ))}
         </ol>
-      </div>
+      </motion.div>
       <div className="w-full lg:w-1/2 h-full flex flex-col justify-center lg:justify-end items-center md:items-start  ">
+        <motion.div 
+        key={activecrew.Name}
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0, scale: 0.8 }}
+        transition={{duration:0.4}}
+
+        >
         <Image
           src={activecrew.image}
           alt="button"
@@ -47,9 +67,11 @@ const CrewSection = () => {
           height={500}
           className=" w-[150px] h-[180px] md:w-[250px] md:h-[250px] lg:w-[500px] lg:h-[500px] self-center lg:self-start object-contain"
         />
+        </motion.div>
         
       </div>
-    </section>
+    </motion.section>
+    </AnimatePresence>
   );
 };
 

@@ -2,6 +2,8 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import { technology } from './technologyData'
+import { AnimatePresence, motion } from 'framer-motion'
+
 
 
 const TechnologySection = () => {
@@ -9,7 +11,11 @@ const TechnologySection = () => {
     const [currentIndex, setcurrentIndex] = useState(0);
     const activetechnology = technology[currentIndex];
     return (
-         <section className="flex flex-col  mx-auto max-w-[1440px] h-full lg:h-[82vh] pl-0 lg:pl-[164px]">
+        <AnimatePresence mode='wait'>
+        <motion.section
+  initial={{ opacity: 0, y: 40 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, ease: "easeOut" }} className="flex flex-col  mx-auto max-w-[1440px] h-full lg:h-[82vh] pl-0 lg:pl-[164px]">
                  {/* main content first row */}
                  <div className="text-center lg:text-start">
                    <h3 className="Text-Preset-5 md:text-[20px] lg:text-[28px] whiteTextColor font-normal tracking-[4px]">
@@ -19,7 +25,15 @@ const TechnologySection = () => {
                  {/* main content second row */}
                  <div className="flex flex-col-reverse lg:flex-row justify-center h-full ">
                    {/* left container content */}
-                   <div className="w-full md:w-[75%] lg:w-[52%]  whiteTextColor flex flex-col justify-center  items-center lg:items-start gap-[55px] p-6 lg:p-0">
+                   <motion.div
+                   key={activetechnology.Name}
+                   initial={{ opacity: 0, y: 50 }} 
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{opacity:0,y:50}}
+                    transition={{duration:0.4}}
+                   
+
+                   className="w-full md:w-[75%] lg:w-[52%]  whiteTextColor flex flex-col justify-center  items-center lg:items-start gap-[55px] p-6 lg:p-0">
                      <div className="flex flex-col lg:flex-row items-center lg:items-start gap-[40px] lg:gap-[64px]">
                        <ol className="cursor-pointer flex flex-row  lg:flex-col  Text-Preset-8 text-[12px] lg:text-[14px] justify-end items-center gap-8">
                          {technology.map((technology, index) => (
@@ -50,9 +64,15 @@ const TechnologySection = () => {
                          </p>
                        </div>
                      </div>
-                   </div>
+                   </motion.div>
                    {/* right container image */}
                    <div className="w-full  lg:w-[48%] h-full flex flex-col items-end justify-center object-cover pt-16 lg:pt-0">
+                     <motion.div key={activetechnology.Name}
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      exit={{ opacity: 0, scale: 0.8 }}
+                      transition={{duration:0.4}} > 
+                      
                      <Image
                        src={activetechnology.image}
                        alt="button"
@@ -60,9 +80,11 @@ const TechnologySection = () => {
                        height={1021}
                        className=" w-[100%] h-[200px] md:w-[100%] md:h-[200%] lg:w-full lg:h-[60vh]"
                      />
+                     </motion.div>
                    </div>
                  </div>
-               </section>
+               </motion.section>
+               </AnimatePresence>
     )
 }
 

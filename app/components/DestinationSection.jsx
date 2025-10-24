@@ -2,25 +2,47 @@
 import React, { useState } from 'react'
 import { destinations } from './destinationData'
 import Image from 'next/image'
+import { AnimatePresence, motion } from 'framer-motion'
+
 
 const DestinationSection = () => {
 
     const [currentIndex, setcurrentIndex] = useState(0);
     const activedestination = destinations[currentIndex];
     return (
-        <section className='flex flex-col lg:flex-row mx-auto sm:w-full md:w-[70%] lg:w-[80%] h-full lg:h-[82vh] lg:items-end md:items-center justify-center lg:justify-end px-6 pb-6 md:p-0 lg:pb-16'>
-            <div className="w-full lg:w-1/2 h-full flex flex-col justify-center lg:justify-between items-center md:items-start  pt-0 lg:pt-16 lg:pb-9 gap-6 lg:gap-0">
+        <AnimatePresence mode='wait'>
+        <motion.section
+  initial={{ opacity: 0, y: 40 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, ease: "easeOut" }} className='flex flex-col lg:flex-row mx-auto sm:w-full md:w-[70%] lg:w-[80%] h-full lg:h-[82vh] lg:items-end md:items-center justify-center lg:justify-end px-6 pb-6 md:p-0 lg:pb-16'>
+            
+            <div 
+            
+            className="w-full lg:w-1/2 h-full flex flex-col justify-center lg:justify-between items-center md:items-start  pt-0 lg:pt-16 lg:pb-9 gap-6 lg:gap-0">
                 <div >
                     <h3 className='Text-Preset-5 md:text-[20px] lg:text-[28px] whiteTextColor'><span className='lightBlueCustomTextColor'>01</span> PICK YOUR DESTINATION</h3>
                 </div>
+                <motion.div
+                key={activedestination.name}
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.8 }}
+                transition={{duration:0.4}}
+                >
                 <Image src={activedestination.image}
                     alt="button"
                     width={350}
                     height={350}
                     className=' w-[150px] h-[150px] md:w-[250px] md:h-[250px] lg:w-[350px] lg:h-[350px] self-center lg:self-start' />
-                {/* sm:w-48 sm:h-48 md:w-72 md:h-72 */}
+                {/* sm:w-48 sm:h-48 md:w-72 md:h-72 */}</motion.div>
             </div>
-            <div className="w-full md:w-[75%] lg:w-1/2 m-auto lg:m-0 items-center lg:items-start  whiteTextColor flex flex-col p-0 lg:pr-10 gap-6 lg:gap-0">
+            <motion.div 
+            key={activedestination.name}
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{opacity:0,y:50}}
+            transition={{duration:0.4}}
+            className="w-full md:w-[75%] lg:w-1/2 m-auto lg:m-0 items-center lg:items-start  whiteTextColor flex flex-col p-0 lg:pr-10 gap-6 lg:gap-0">
                 <ol className="flex  Text-Preset-8 text-[12px] lg:text-[14px] space-x-5 lg:space-x-10   justify-end items-center whiteTextColor">
                     {destinations.map((planet, index) => (
                         <li key={planet.name}>
@@ -49,9 +71,10 @@ const DestinationSection = () => {
                         <h4 className='Text-Preset-6 text-[28px] font-light whiteTextColor '>{activedestination.time}</h4>
                     </div>
                 </div>
-            </div>
+            </motion.div>
 
-        </section>
+        </motion.section>
+        </AnimatePresence>
     )
 }
 
